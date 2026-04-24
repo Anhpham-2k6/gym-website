@@ -169,7 +169,32 @@ footer { background: #050505; padding: 60px 0 20px; border-top: 1px solid #222; 
 .footer-col a { color: #888; transition: 0.3s; }
 .footer-col a:hover { color: var(--accent-color); }
 .footer-bottom { text-align: center; color: #555; padding-top: 20px; border-top: 1px solid #222; font-size: 0.9rem; }
+/* --- ICON MẠNG XÃ HỘI --- */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các icon */
+    margin-top: 10px;
+}
 
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 50%; /* Bo tròn icon */
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--accent-color); /* Đổi sang màu nhấn (đỏ/vàng) khi trỏ chuột */
+    color: #fff;
+    transform: translateY(-5px); /* Hiệu ứng nảy lên nhẹ */
+    box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4); /* Thêm bóng đổ, nếu bạn dùng màu vàng hãy đổi mã màu rgb nhé */
+}
 /* --- RESPONSIVE DESIGN (Cho Điện thoại/Tablet) --- */
 @media (max-width: 992px) {
     .grid-2, .grid-3 { grid-template-columns: 1fr; }
